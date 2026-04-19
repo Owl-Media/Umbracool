@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Umbraco documentation
+    url: https://docs.umbraco.com/umbraco-cms/
+    about: Check the official Umbraco docs for product behavior and configuration guidance.
+  - name: Coolify documentation
+    url: https://coolify.io/docs
+    about: Check the official Coolify docs for platform-specific deployment behavior.

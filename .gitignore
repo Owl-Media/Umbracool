@@ -1,0 +1,39 @@
+# .NET build output
+**/bin/
+**/obj/
+artifacts/
+TestResults/
+
+# IDE and OS files
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+Thumbs.db
+.DS_Store
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Local environment files
+.env
+.env.*
+!.env.example
+appsettings.Local.json
+appsettings.*.local.json
+src/Umbracool.Web/appsettings-schema*.json
+src/Umbracool.Web/umbraco-package-schema.json
+
+# Logs and local runtime data
+*.log
+src/Umbracool.Web/umbraco/Logs/
+src/Umbracool.Web/umbraco/Data/
+
+# User uploaded media
+src/Umbracool.Web/wwwroot/media/*
+!src/Umbracool.Web/wwwroot/media/.gitkeep

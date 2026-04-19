@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an improvement for the starter repo, docs, or contributor tooling.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are welcome. Focus on the user outcome you want and why it matters.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What friction, limitation, or missing capability are you seeing?
+      placeholder: It is hard to...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the behavior or improvement you would like.
+      placeholder: Add a workflow that...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Starter scaffolding
+        - Coolify deployment
+        - Database options
+        - Documentation
+        - CI / GitHub
+        - Testing
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Share any workarounds or competing ideas you considered.

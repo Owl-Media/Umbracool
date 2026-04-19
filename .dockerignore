@@ -1,0 +1,15 @@
+.git
+.gitignore
+.vs
+.idea
+.vscode
+.tmp
+**/bin
+**/obj
+**/.DS_Store
+.env
+.env.*
+!.env.example
+src/Umbracool.Web/umbraco/Logs
+src/Umbracool.Web/umbraco/Data
+src/Umbracool.Web/wwwroot/media

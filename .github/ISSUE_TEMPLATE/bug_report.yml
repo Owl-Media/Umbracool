@@ -1,0 +1,61 @@
+name: Bug report
+description: Report something broken in the starter, docs, or deployment flow.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Umbracool. Please include enough detail for someone else to reproduce the problem.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the bug and the impact.
+      placeholder: The Coolify deploy fails because...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps that lead to the issue.
+      placeholder: |
+        1. Import the repo into Coolify
+        2. Set the environment variables
+        3. Deploy the stack
+        4. Observe the failure
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The app should complete unattended install and serve /umbraco.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Coolify deployment
+        - Docker / Compose
+        - SQL Server bootstrap
+        - Umbraco app
+        - Documentation
+        - CI / GitHub
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment details
+      description: Include OS, Coolify version, Umbraco version, and anything else relevant.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste logs, stack traces, or screenshots if available.
+      render: shell
