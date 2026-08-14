@@ -1,0 +1,56 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "06:00"
+      timezone: "Europe/London"
+    commit-message:
+      prefix: "[Dep]"
+    labels:
+      - "dependencies"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "06:10"
+      timezone: "Europe/London"
+    commit-message:
+      prefix: "[Dep][docker]"
+    labels:
+      - "dependencies"
+      - "docker"
+
+  - package-ecosystem: "docker"
+    directory: "/database"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "06:12"
+      timezone: "Europe/London"
+    commit-message:
+      prefix: "[Dep][docker-db]"
+    labels:
+      - "dependencies"
+      - "docker"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday"
+      time: "06:15"
+      timezone: "Europe/London"
+    commit-message:
+      prefix: "[CI]"
+    labels:
+      - "dependencies"
+      - "ci"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
